@@ -1,17 +1,17 @@
 package Ques5;
 
 class Employee{
-    int id;
-    String name;
+    private int id;
+    private String name;
 
-    Employee(){}
+    public Employee(){}
 
-    Employee(int id, String name){
+    public Employee(int id, String name){
         this.id = id;
         this.name = name;
     }
 
-    Employee(Employee emp){
+    public Employee(Employee emp){
         this.id = emp.id;
         this.name = emp.name;
     }
@@ -51,7 +51,7 @@ public class CopyConstructor {
 
         emp2.setName("Nidhi");
 
-        System.out.println("After Modification in emp2: " + emp2);
-        System.out.println("After Modification in emp1: " + emp1);
+        System.out.println("After Modification emp2: " + emp2);
+        System.out.println("After Modification emp1: " + emp1);
     }
 }

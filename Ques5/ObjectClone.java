@@ -1,17 +1,17 @@
 package Ques5;
 
 class Emp implements Cloneable{
-    int id;
-    String name;
+    private int id;
+    private String name;
 
-    Emp(){}
+    public Emp(){}
 
-    Emp(int id, String name){
+    public Emp(int id, String name){
         this.id = id;
         this.name = name;
     }
 
-    Emp(Emp emp){
+    public Emp(Emp emp){
         this.id = emp.id;
         this.name = emp.name;
     }
@@ -48,7 +48,7 @@ public class ObjectClone {
 
         emp2.setName("Nidhi");
 
-        System.out.println("After Modification in emp2: " + emp2);
-        System.out.println("After Modification in emp1: " + emp1);
+        System.out.println("After Modification emp2: " + emp2);
+        System.out.println("After Modification emp1: " + emp1);
     }
 }
